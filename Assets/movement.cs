@@ -6,6 +6,8 @@ public class Movement : MonoBehaviour
     public Rigidbody2D rigidBody2d;
 
     public float speed = 2;
+    public float defaultSpeed = 2;
+
 
     public KeyCode UpKey;
     public KeyCode DownKey;
@@ -13,6 +15,7 @@ public class Movement : MonoBehaviour
 
     private void Start()
     {
+        defaultSpeed = speed;
         rigidBody2d = GetComponent<Rigidbody2D>();
     }
 
